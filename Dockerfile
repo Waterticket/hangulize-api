@@ -14,7 +14,7 @@ RUN cp /build/bin/hangulize-api ./hangulize-api
 
 
 
-FROM golang:1.20.4-alpine3.18
+FROM alpine:3.14
 
 RUN mkdir -p /app
 WORKDIR /app
