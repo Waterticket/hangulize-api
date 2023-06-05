@@ -5,7 +5,6 @@ WORKDIR /build
 
 COPY go.mod .
 COPY go.sum .
-RUN go mod vendor
 COPY . .
 RUN go build -o bin/hangulize-api ./main.go
 
