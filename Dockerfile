@@ -19,7 +19,7 @@ FROM golang:1.20.4-alpine3.18
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY --chown=0:0 --from=builder /dist /app
+COPY --chown=0:0 --from=builder /dist/hangulize-api /app/hangulize-api
 EXPOSE 5000
 
 ENTRYPOINT ["/app/hangulize-api"]
