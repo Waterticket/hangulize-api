@@ -7,7 +7,7 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod vendor
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o bin/hangulize-api ./main.go
+RUN go build -o bin/hangulize-api ./main.go
 
 RUN mkdir -p /dist
 WORKDIR /dist
