@@ -14,7 +14,7 @@ RUN cp /build/bin/hangulize-api ./hangulize-api
 
 
 
-FROM alpine:3.14
+FROM ubuntu:20.04
 
 RUN mkdir -p /app
 WORKDIR /app
